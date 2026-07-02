@@ -16,10 +16,14 @@ min-height:100vh;
 display:flex;
 align-items:center;
 justify-content:center;
-background:linear-gradient(135deg,#f8f5f2,#efe6dc);
-position:relative;
+padding:120px 8%;
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url("banner.jpg");
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
 overflow:hidden;
-padding:60px 8%;
 }
 
 .hero-content{
