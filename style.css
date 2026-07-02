@@ -173,7 +173,39 @@ color:#b88b5d;
 margin-top:25px;
 display:inline-block;
 }
+.footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+}
 
+.footer h3{
+    font-family:'Playfair Display',serif;
+    font-size:32px;
+    margin-bottom:20px;
+}
+
+.footer p{
+    margin:10px 0;
+}
+
+.footer a{
+    color:#b88b5d;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.footer hr{
+    margin:35px auto;
+    max-width:250px;
+    border:none;
+    border-top:1px solid rgba(255,255,255,.2);
+}
+
+.footer small{
+    color:#bbb;
+}
 @media(max-width:900px){
 
 .hero-content{
