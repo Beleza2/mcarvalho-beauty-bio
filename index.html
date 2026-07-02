@@ -61,7 +61,7 @@ Agendar Horário
 
 </header>
 
-<section class="about" id="sobre">
+<section class="about fade-up" id="sobre">
 
 <div class="container">
 
@@ -110,7 +110,7 @@ e também da formação profissional.
 
     </div>
 </section>
-    <section class="stats">
+    <section class="stats fade-up">
     <div class="container">
 
         <div class="stat">
@@ -159,7 +159,7 @@ e também da formação profissional.
 
     </div>
 </section>
-<section class="services" id="especialidades">
+<section class="services fade-up" id="especialidades">
 
 <div class="container">
 
@@ -206,7 +206,7 @@ Falar no WhatsApp
 </a>
 
 </section>
-<footer class="footer">
+<footer class="footer fade-up">
 
     <div class="container">
 
@@ -239,5 +239,18 @@ Falar no WhatsApp
    aria-label="WhatsApp">
     💬
 </a>
+    <script>
+const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+    });
+});
+
+document.querySelectorAll(".fade-up").forEach(el=>{
+    observer.observe(el);
+});
+</script>
 </body>
 </html>
