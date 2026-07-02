@@ -235,7 +235,29 @@ justify-content:center;
 .menu a:hover{
     color:#b88b5d;
 }
+.stats{
+    background:#b88b5d;
+    color:white;
+    padding:80px 20px;
+}
 
+.stats .container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:40px;
+    text-align:center;
+}
+
+.stat h2{
+    font-size:56px;
+    font-family:'Playfair Display', serif;
+    margin-bottom:10px;
+}
+
+.stat p{
+    font-size:18px;
+    opacity:.9;
+}
 @media(max-width:900px){
     .navbar{
         flex-direction:column;
